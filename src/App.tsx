@@ -36,7 +36,7 @@ class App extends React.Component {
 
             <Card title={''}>
               <GuildMate name={'Postmalorne'} img={postmalorne} quote={'I\'m not AMERICAN'} />
-              <GuildMate name={'Warmiq'} img={warmiq} quote={'*Jumps off* Uuuhm, shieeeet'} />
+              <GuildMate name={'Warmiq'} img={warmiq} quote={'*Jumps off* Ooooh, shieeeet'} />
               <GuildMate name={'Randdy'} img={randy} quote={'*Unmutes* *Loud music playing* o shit *Mutes*'} />
             </Card>
 
@@ -45,17 +45,7 @@ class App extends React.Component {
 
             <Card title={''}>
               <GuildMate name={'Postmalorne'} img={postmalorne} quote={'I\'m not AMERICAN'} />
-              <GuildMate name={'Warmiq'} img={warmiq} quote={'*Jumps off* Uuuhm, shieeeet'} />
-              <GuildMate name={'Randdy'} img={randy} quote={'*Unmutes* *Loud music playing* o shit *Mutes*'} />
-            </Card>
-
-          </FlexRow>
-
-          <FlexRow>
-
-            <Card title={''}>
-              <GuildMate name={'Postmalorne'} img={postmalorne} quote={'I\'m not AMERICAN'} />
-              <GuildMate name={'Warmiq'} img={warmiq} quote={'*Jumps off* Uuuhm, shieeeet'} />
+              <GuildMate name={'Warmiq'} img={warmiq} quote={'*Jumps off* Ooooh, shieeeet'} />
               <GuildMate name={'Randdy'} img={randy} quote={'*Unmutes* *Loud music playing* o shit *Mutes*'} />
             </Card>
 
@@ -65,7 +55,17 @@ class App extends React.Component {
 
             <Card title={''}>
               <GuildMate name={'Postmalorne'} img={postmalorne} quote={'I\'m not AMERICAN'} />
-              <GuildMate name={'Warmiq'} img={warmiq} quote={'*Jumps off* Uuuhm, shieeeet'} />
+              <GuildMate name={'Warmiq'} img={warmiq} quote={'*Jumps off* Ooooh, shieeeet'} />
+              <GuildMate name={'Randdy'} img={randy} quote={'*Unmutes* *Loud music playing* o shit *Mutes*'} />
+            </Card>
+
+          </FlexRow>
+
+          <FlexRow>
+
+            <Card title={''}>
+              <GuildMate name={'Postmalorne'} img={postmalorne} quote={'I\'m not AMERICAN'} />
+              <GuildMate name={'Warmiq'} img={warmiq} quote={'*Jumps off* Ooooh, shieeeet'} />
               <GuildMate name={'Randdy'} img={randy} quote={'*Unmutes* *Loud music playing* o shit *Mutes*'} />
             </Card>
 

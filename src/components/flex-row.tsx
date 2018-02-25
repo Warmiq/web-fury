@@ -6,7 +6,7 @@ interface RowProps {
     className?: string;
 }
 
-const Row: React.StatelessComponent<RowProps> =
+const Base: React.StatelessComponent<RowProps> =
     (props) => {
 
         return (
@@ -16,6 +16,24 @@ const Row: React.StatelessComponent<RowProps> =
         );
     };
 
-export const FlexRow = styled(Row) `
+export const FlexRowCentered = styled(Base) `
+  display:flex;
+  flex-direction:row;
+  justify-content: centered;  
+`;
+
+export const FlexRow = styled(Base) `  
+    display:flex;     
+    flex-direction: row;
+    justify-content: centered;
+`;
+
+export const FlexColumn = styled(Base) `
+    align-self: flex-end;    
+    align-items: flex-end;
+`;
+
+export const FlexReverseRow = styled(Base) `
+  
     flex-direction: row-reverse;
 `;

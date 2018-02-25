@@ -5,9 +5,9 @@ import * as Theme from './styles/theme';
 
 import './App.css';
 import { GuildMate } from './components/guild-mate';
-import { FlexRow } from './components/flex-row';
+import { FlexRow, FlexColumn } from './components/flex-row';
 import { Card } from './components/card';
-import { Title } from './components/title';
+import { Title, SubTitle } from './components/title';
 
 const warmiq = require('./warmiq.png');
 const postmalorne = require('./sukipng.png');
@@ -16,9 +16,14 @@ const randy = require('./randdy.png');
 const Content = styled.div`
    display: flex;
    flex-direction: row;
-   padding-right: 12%;
-   padding-left:12%;
+  //  padding-right: 10%;
+   margin-top: 40px;
+   padding-left: 6%;
    font-familiy: {${Theme.FONT_FAMILY}}
+`;
+
+const HeaderContainer = styled.div`
+  margin-left: 10%;
 `;
 
 class App extends React.Component {
@@ -27,8 +32,21 @@ class App extends React.Component {
       <div className={'App'}>
 
         <header className="App-header">
-          <img src={warmiq} className="App-logo" alt="logo" />
-          <Title title={'Fury of Azeroth'} />
+          <HeaderContainer>
+            <FlexRow>
+              <FlexColumn>
+                <Title title={'Fury of Azeroth'} />
+              </FlexColumn>
+
+              <FlexColumn>
+                <img src={randy} className="App-logo" alt="logo" />
+              </FlexColumn>
+
+              <FlexColumn>
+                <SubTitle title={'Art by our one and only Postmalorne'} />
+              </FlexColumn>
+            </FlexRow>
+          </HeaderContainer>
         </header>
 
         <Content>
@@ -52,7 +70,7 @@ class App extends React.Component {
           <FlexRow>
             <Card >
               <GuildMate name={'Blindfox'} img={warmiq} quote={'Just chillin'} />
-              <GuildMate name={'Denjiz'} img={randy} quote={'Kills Leggretta - EZ'} />
+              <GuildMate name={'Denjiz'} img={randy} quote={'Unconditional trust in tanks = dead on pull'} />
               <GuildMate name={'Leggretta'} img={postmalorne} quote={'Oh nooo my DPS logs - wipe pls'} />
             </Card>
           </FlexRow>

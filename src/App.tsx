@@ -71,7 +71,7 @@ class App extends React.Component {
             <Card >
               <GuildMate name={'Blindfox'} img={warmiq} quote={'Just chillin'} />
               <GuildMate name={'Denjiz'} img={randy} quote={'Unconditional trust in tanks = dead on pull'} />
-              <GuildMate name={'Leggretta'} img={postmalorne} quote={'Oh nooo my DPS logs - wipe pls'} />
+              <GuildMate name={'Legretta'} img={postmalorne} quote={'Oh nooo my DPS logs - wipe pls'} />
             </Card>
           </FlexRow>
 

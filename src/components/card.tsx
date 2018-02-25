@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import * as Theme from '../styles/theme';
 
 interface CardProps {
-    title: string;
+    title?: string;
     header?: JSX.Element;
 }
 
@@ -24,6 +24,7 @@ class UnstyledCard extends React.Component<CardProps> {
     }
 }
 
+// TODO: Them styles need finishing here
 export const Card = styled(UnstyledCard) `
 
 display:flex;

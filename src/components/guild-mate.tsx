@@ -28,6 +28,7 @@ export const GuildMate = styled(Person) `
 
 flex-direction: column;
 margin-top: 20px;
+margin-right 20px;
 
 .name {
     font-weight: bold;
@@ -39,8 +40,6 @@ margin-top: 20px;
 }
 
 .quote {
-    font-style: italic;
-    font-size: 
-    color: ligther;
+    font-style: italic;    
 }
 `;

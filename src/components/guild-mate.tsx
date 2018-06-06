@@ -8,6 +8,7 @@ interface MateProps {
     img: string;
     quote: string | JSX.Element;
     className?: string;
+    inactive: boolean;
 }
 
 class Person extends React.Component<MateProps, {}> {
@@ -27,19 +28,21 @@ class Person extends React.Component<MateProps, {}> {
 export const GuildMate = styled(Person) `
 
 flex-direction: column;
-margin-top: 20px;
-margin-right 20px;
+margin-top: ${props => props.name === 'Flip' ? '0px' : '20px'};
+margin-right ${props => props.name === 'Flip' ? '40px' : '20px'};
+opacity: ${props => props.inactive ? '0.33' : '1'};
+transform: ${props => props.name === 'Flip' ? 'rotate(-72deg);' : ''};
 
 .name {
     font-weight: bold;
 }
 
 .img {
-   border-radius: 50%;
-   height: 150px;    
+    border-radius: 50%;
+    height: 150px;
 }
 
 .quote {
-    font-style: italic;    
+    font-style: italic;
 }
 `;
